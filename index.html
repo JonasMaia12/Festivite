@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivite</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside>
+      <div>
+        <img src="./assets/logo.svg" alt="logo" />
+        <h1>Festivite</h1>
+        <p>Crie um convite digital para o seu evento</p>
+      </div>
+    </aside>
+    <main>
+      <div id="app">
+        <h2>Crie seu convite</h2>
+
+        <form action="" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="calendar" />
+              Sobre o evento
+            </legend>
+
+            <div>
+              <label for="title">Título</label>
+              <input
+                id="title"
+                name="title"
+                type="text"
+                placeholder="Nome do evento"
+              />
+            </div>
+
+            <div class="container">
+              <div>
+                <label for="start">Início</label>
+                <input
+                  type="datetime-local"
+                  id="start"
+                  name="start"
+                  lang="pt-pt"
+                />
+              </div>
+              <div>
+                <label for="end">Fim</label>
+                <input type="datetime-local" id="end" name="end" lang="pt-pt" />
+              </div>
+            </div>
+
+            <div class="container">
+              <div>
+                <label>Tipo</label>
+
+                <div class="radio-container-type">
+                  <div>
+                    <input
+                      type="radio"
+                      name="locale"
+                      value="building"
+                      checked
+                      id="building"
+                    />
+                    <div class="radio-image-build"></div>
+                    <label for="building">Presencial</label>
+                  </div>
+
+                  <div>
+                    <input
+                      type="radio"
+                      name="locale"
+                      value="video"
+                      id="video"
+                    />
+                    <div class="radio-image-video"></div>
+                    <label for="video">Online</label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="locale">Local</label>
+                <input
+                  id="locale"
+                  name="locale"
+                  type="text"
+                  placeholder="Link ou endereço"
+                />
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="Description">Descrição</label>
+              <textarea
+                name="Description"
+                id="Description"
+                cols="30"
+                rows="5"
+                placeholder="Escreva sobre os detalhes do evento"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <img src="./assets/icons/brush.svg" alt="calendar" />
+              Personalização
+            </legend>
+
+            <div>
+              <label for="title">Cor principal</label>
+              <div class="radio-container-color">
+                <div class="cor1">
+                  <input
+                    type="radio"
+                    id="cor1"
+                    name="color"
+                    value="#59B2FF"
+                    checked
+                  />
+                </div>
+                <div class="cor2">
+                  <input type="radio" id="cor2" name="color" value="#6A59FF" />
+                </div>
+                <div class="cor3">
+                  <input type="radio" id="cor3" name="color" value="#b259ff" />
+                </div>
+                <div class="cor4">
+                  <input type="radio" id="cor4" name="color" value="#ff59f9" />
+                </div>
+                <div class="cor5">
+                  <input type="radio" id="cor5" name="color" value="#ff598b" />
+                </div>
+                <div class="cor6">
+                  <input type="radio" id="cor6" name="color" value="#ff5959" />
+                </div>
+                <div class="cor7">
+                  <input type="radio" id="cor7" name="color" value="#ff8b59" />
+                </div>
+                <div class="cor8">
+                  <input type="radio" id="cor8" name="color" value="#ffcd59" />
+                </div>
+                <div class="cor9">
+                  <input type="radio" id="cor9" name="color" value="#e1ff59" />
+                </div>
+                <div class="cor10">
+                  <input type="radio" id="cor10" name="color" value="#59ff91" />
+                </div>
+                <div class="cor11">
+                  <input type="radio" id="cor11" name="color" value="#59fff9" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="title">Tema do evento</label>
+              <div class="radio-container-theme">
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="birthday"
+                    checked
+                    id="birthday"
+                  />
+                  <img src="./assets/images/birthday.jpg" alt="birthday" />
+                  <p>Aniversário</p>
+                </div>
+                <div>
+                  <input type="radio" name="theme" value="child" id="child" />
+                  <img src="./assets/images/child.jpg" alt="child" />
+                  <p>Infantil</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="graduation"
+                    id="graduation"
+                  />
+                  <img src="./assets/images/graduation.jpg" alt="graduation" />
+                  <p>Formatura</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="marriage"
+                    id="marriage"
+                  />
+                  <img src="./assets/images/marriage.jpg" alt="" />
+                  <p>Casamento</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="baby-shower"
+                    id="baby-shower"
+                  />
+                  <img src="./assets/images/baby-shower.jpg" alt="" />
+                  <p>Chá de bebê</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="bridal-shower"
+                    id="bridal-shower"
+                  />
+                  <img src="./assets/images/bridal-shower.jpg" alt="" />
+                  <p>Chá de panela</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="carnival"
+                    id="carnival"
+                  />
+                  <img src="./assets/images/carnival.jpg" alt="" />
+                  <p>Carnaval</p>
+                </div>
+                <div>
+                  <input type="radio" name="theme" value="easter" id="easter" />
+                  <img src="./assets/images/easter.jpg" alt="" />
+                  <p>Páscoa</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="saint-john"
+                    id="saint-john"
+                  />
+                  <img src="./assets/images/saint-john.jpg" alt="" />
+                  <p>São João</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="halloween"
+                    id="halloween"
+                  />
+                  <img src="./assets/images/halloween.jpg" alt="" />
+                  <p>Halloween</p>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="christmas"
+                    id="christmas"
+                  />
+                  <img src="./assets/images/christmas.jpg" alt="" />
+                  <p>Natal</p>
+                </div>
+                <div>
+                  <input type="radio" name="theme" value="other" id="other" />
+                  <img src="./assets/images/other.jpg" alt="" />
+                  <p>Outro</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-grid">
+              <div>
+                <label for="">Estilo</label>
+                <div class="switch-toggle">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </div>
+              </div>
+
+              <div class="droparea-container">
+                <label for="picture-file">Foto de capa</label>
+
+                <div>
+                  <input type="file" id="picture-file" name="picture-file" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

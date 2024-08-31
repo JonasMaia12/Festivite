@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  grid-template-columns: 32.75% 67.25%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background: url(../assets/background.svg) no-repeat;
+  background-size: cover;
+
+  div {
+    padding: 2rem;
+
+    img {
+      margin-bottom: 1rem;
+      width: 2.875rem;
+    }
+  }
+}
+
+main {
+  background-color: var(--shape-body);
+  overflow: auto;
+
+  #app {
+    max-width: 35rem;
+    margin: 5rem auto;
+  }
+}

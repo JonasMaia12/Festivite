@@ -1,0 +1,145 @@
+.radio-container-color,
+.radio-container-type,
+.radio-container-theme {
+  > div {
+    position: relative;
+
+    input,
+    input:focus,
+    input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+
+.radio-container-type {
+  display: flex;
+
+  border-radius: 0.5rem;
+  outline: 1px solid var(--input-stroke);
+
+  padding: 0.25rem;
+  font: var(--body-md);
+  background-color: var(--input-base);
+  color: var(--text-heading);
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+
+    .radio-image-build {
+      background: url(../../assets/icons/building.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+
+    .radio-image-video {
+      background: url(../../assets/icons/video.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+
+    label {
+      margin: 0;
+    }
+
+    &:has(:checked) {
+      background-color: var(--shape-hover);
+
+      label {
+        color: var(--text-heading);
+      }
+
+      .radio-image-build {
+        background: url(../../assets/icons/building-hover.svg) no-repeat;
+      }
+
+      .radio-image-video {
+        background: url(../../assets/icons/video-hover.svg) no-repeat;
+      }
+    }
+  }
+}
+
+.radio-container-color {
+  display: flex;
+  gap: 0.75rem;
+
+  > div {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border: 5px solid var(--shape-button);
+
+    &.cor1 {
+      background-color: var(--brand-light);
+    }
+    &.cor2 {
+      background-color: var(--navy);
+    }
+    &.cor3 {
+      background-color: var(--purple);
+    }
+    &.cor4 {
+      background-color: var(--fuschia);
+    }
+    &.cor5 {
+      background-color: var(--pink);
+    }
+    &.cor6 {
+      background-color: var(--danger);
+    }
+    &.cor7 {
+      background-color: var(--orange);
+    }
+    &.cor8 {
+      background-color: var(--yellow);
+    }
+    &.cor9 {
+      background-color: var(--lime);
+    }
+    &.cor10 {
+      background-color: var(--green);
+    }
+    &.cor11 {
+      background-color: var(--cyan);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}
+
+.radio-container-theme {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+  gap: 0.5rem;
+
+  > div {
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem;
+
+    img {
+      border-radius: 0.5rem;
+    }
+
+    p {
+      padding-block: 0.5rem 0.25rem;
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}

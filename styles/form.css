@@ -1,0 +1,41 @@
+@import url(./fields/index.css);
+
+form {
+}
+
+fieldset {
+  border: none;
+
+  > div {
+    margin-bottom: 1rem;
+  }
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  margin-bottom: 1.5rem;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+
+  div {
+    width: 100%;
+  }
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr;
+  gap: 1rem;
+}
