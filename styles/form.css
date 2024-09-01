@@ -1,8 +1,5 @@
 @import url(./fields/index.css);
 
-form {
-}
-
 fieldset {
   border: none;
 
@@ -38,4 +35,10 @@ fieldset + fieldset {
   display: grid;
   grid-template-columns: 1.2fr 2.8fr;
   gap: 1rem;
+}
+
+.actions-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }

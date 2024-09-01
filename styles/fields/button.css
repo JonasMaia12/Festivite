@@ -1,0 +1,22 @@
+button {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px;
+  gap: 12px;
+  min-width: 177px;
+  min-height: 48px;
+  background: var(--brand-dark);
+  border-radius: 8px;
+
+  font: var(--body-md);
+  color: var(--text-heading);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-mid);
+  }
+}

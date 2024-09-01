@@ -114,7 +114,7 @@
 
           <fieldset>
             <legend>
-              <img src="./assets/icons/brush.svg" alt="calendar" />
+              <img src="./assets/icons/brush.svg" alt="Brush" />
               Personalização
             </legend>
 
@@ -278,21 +278,100 @@
             <div class="container-grid">
               <div>
                 <label for="">Estilo</label>
-                <div class="switch-toggle">
+                <div class="switch">
                   <input type="checkbox" />
-                  <span class="slider"></span>
+                  <div class="toggle"></div>
+                  <div class="toggle-text"></div>
                 </div>
               </div>
 
-              <div class="droparea-container">
+              <div>
                 <label for="picture-file">Foto de capa</label>
 
-                <div>
+                <div class="dropzone">
                   <input type="file" id="picture-file" name="picture-file" />
+                  <div>
+                    <img src="./assets/icons/upload.svg" />
+                    <p>Selecionar</p>
+                  </div>
+                  <p>Nenhum arquivo selecionado</p>
                 </div>
               </div>
             </div>
           </fieldset>
+
+          <fieldset>
+            <legend>
+              <img src="./assets/icons/contact.svg" alt="contact" />
+              Dados para contato
+            </legend>
+
+            <div>
+              <label for="name">Nome</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nome completo"
+              />
+            </div>
+
+            <div class="container">
+              <div>
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="exemplo@email.com"
+                />
+              </div>
+              <div>
+                <label for="tel">Telefone</label>
+                <input
+                  id="tel"
+                  name="tel"
+                  type="tel"
+                  placeholder="(99) 99999-9999"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="divider"></div>
+
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms" />
+
+            <label for="terms">
+              Li e concordo com os <span>Termos e Condições</span> e com a
+              <span>Política de Privacidade</span>
+            </label>
+          </div>
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="updates" id="updates" />
+
+            <label for="updates">
+              Aceito receber atualizações e promoções por e-mail
+            </label>
+          </div>
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="updates-sms" id="updates-sms" />
+
+            <label for="updates-sms">
+              Aceito receber atualizações e promoções por SMS
+            </label>
+          </div>
+
+          <div class="actions-wrapper">
+            <button type="submit">
+              <img src="./assets/icons/ticket.svg" />
+              Gerar convite
+            </button>
+          </div>
         </form>
       </div>
     </main>

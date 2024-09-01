@@ -1,2 +1,28 @@
-.droparea-container {
+.dropzone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    gap: 0.5rem;
+
+    width: 7.5rem;
+    height: 2.5rem;
+
+    background: #2d3136;
+    border-radius: 8px;
+  }
 }

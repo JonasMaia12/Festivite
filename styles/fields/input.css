@@ -13,6 +13,14 @@ select {
   color: var(--text-heading);
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+input[type="datetime-local"]:focus-within {
+  outline: 1px solid var(--brand-light);
+  outline-offset: 0.1px;
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);
