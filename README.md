@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Festive é um site desktop de convite para evento com formulário para geração do convite personalizado.
 
-- [Acesse o projeto finalizado, online](https://jonasmaia12.github.io/Local-turistico/)
+- [Acesse o projeto finalizado, online](https://jonasmaia12.github.io/Festivite/)
 
 ## 🔖 Layout
 
